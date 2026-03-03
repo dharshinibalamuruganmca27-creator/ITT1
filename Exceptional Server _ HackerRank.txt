@@ -1,0 +1,388 @@
+  * HackerRank Home <https://www.hackerrank.com/dashboard>
+    |
+  * Prepare <https://www.hackerrank.com/dashboard>
+  * Certify <https://www.hackerrank.com/skills-verification>
+  * Compete <https://www.hackerrank.com/contests>
+
+  *
+    /
+
+    /
+
+  *
+    /
+
+    /
+
+  *
+    /
+
+    /
+
+  * |
+  *
+    Switch to..
+  *
+
+    /
+
+    /
+
+ 1. Prepare <https://www.hackerrank.com/dashboard>
+ 2. C++ <https://www.hackerrank.com/domains/cpp>
+ 3. Classes <https://www.hackerrank.com/domains/cpp/classes>
+ 4. Exceptional Server
+
+
+    Exceptional Server
+
+  //
+
+60 more points to get your next star!
+Rank: 448995|Points: 90/150// <https://www.hackerrank.com/scoring>
+CPP
+
+You have successfully solved Exceptional Server
+  
+You are now 60 points away from the 4th star for your c++ badge.
+Try the next challenge <https://www.hackerrank.com/challenges/virtual-
+functions?isFullScreen=true> | Try a Random Challenge <https://
+www.hackerrank.com/challenges/c-tutorial-class>
+Problem
+ <https://www.hackerrank.com/challenges/exceptional-server/problem>
+Submissions
+ <https://www.hackerrank.com/challenges/exceptional-server/submissions>
+Leaderboard
+ <https://www.hackerrank.com/challenges/exceptional-server/leaderboard>
+Discussions
+ <https://www.hackerrank.com/challenges/exceptional-server/forum>
+HackerRank Logo <https://www.hackerrank.com/dashboard>
+|
+
+ 1. Prepare <https://www.hackerrank.com/dashboard>
+ 2. C++ <https://www.hackerrank.com/domains/cpp>
+ 3. Classes <https://www.hackerrank.com/domains/cpp/classes>
+ 4. Exceptional Server
+
+Exit Full Screen View//
+
+  * Problem <https://www.hackerrank.com/challenges/exceptional-server/
+    problem>
+  * Submissions <https://www.hackerrank.com/challenges/exceptional-
+    server/submissions>
+  * Leaderboard <https://www.hackerrank.com/challenges/exceptional-
+    server/leaderboard>
+  * Discussions <https://www.hackerrank.com/challenges/exceptional-
+    server/forum>
+
+In this challenge, you are required to handle error messages while
+working with small computational server that performs complex calculations.
+It has a function that takes large numbers as its input and returns a
+numeric result. Unfortunately, there are various exceptions that may
+occur during execution.
+
+Complete the code in your editor so that it prints appropriate error
+messages, should anything go wrong. The expected behavior is defined as
+follows:
+
+  * If the /compute/ function runs fine with the given arguments, then
+    print the result of the function call.
+  * If it fails to allocate the memory that it needs, print |Not enough
+    memory|.
+  * If any other standard C++ exception occurs, print |Exception: S|
+    where is the exception's error message.
+  * If any non-standard exception occurs, print |Other Exception|.
+
+*Input Format*
+
+The first line contains an integer, , the number of test cases.
+Each of the subsequent lines describes a test case as space-separated
+integers, and , respectively.
+
+*Constraints*
+
+
+*Output Format*
+
+For each test case, print a single line containing whichever message
+described in the /Problem Statement/ above is appropriate. After all
+messages have been printed, the locked stub code in your editor prints
+the server load.
+
+*Sample Input*
+
+|2
+-8 5
+1435434255433 5
+|
+
+*Sample Output*
+
+|Exception: A is negative
+Not enough memory
+2
+|
+
+*Explanation*
+
+is negative, hence 'Exception: A is negative' is thrown. Since the
+second input is too large, 'not enough memory' is displayed. is the
+server load.
+
+Change Theme
+Language
+
+C++11
+
+More
+1
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+#include <iostream>
+        /* Enter your code here. */
+try {
+    // Attempt the computation
+    long long result = Server::compute(A, B);
+    cout << result << endl;
+} 
+catch (const std::bad_alloc& e) {
+    // Specifically catches memory allocation failures
+    cout << "Not enough memory" << endl;
+} 
+catch (const std::exception& e) {
+    // Catches standard C+
++ exceptions (e.g., std::invalid_argument, std::runtime_error)
+    cout << "Exception: " << e.what() << endl;
+} 
+catch (...) {
+    // Catches non-
+standard exceptions (anything not derived from std::exception)
+    cout << "Other Exception" << endl;
+}
+    }
+
+}
+
+
+      class |exception|
+
+provided by |<exception>|
+
+------------------------------------------------------------------------
+
+@brief Base class for all library exceptions.
+This is the base class for all exceptions thrown by the standard
+library, and by certain language expressions. You are free to derive
+your own %exception classes, or use a different hierarchy, or to throw
+non-class data (e.g., fundamental types).
+
+------------------------------------------------------------------------
+// In namespace std
+class exception {}
+Line: 55 Col: 1
+Submit Code
+
+Run Code
+
+//Upload Code as File
+
+Test against custom input
+
+
+            Congratulations
+
+You solved this challenge. Would you like to challenge your friends?
+Share on FacebookShare on TwitterShare on LinkedIn
+Next Challenge
+ <https://www.hackerrank.com/challenges/virtual-functions?isFullScreen=true>
+
+Test case 0
+
+Test case 1
+
+Test case 2
+
+Test case 3
+
+Test case 4
+
+Test case 5
+
+Test case 6
+
+Test case 7
+
+Test case 8
+
+Test case 9
+
+Compiler Message
+
+|Success|
+
+Input (stdin)
+Download
+
+  *
+
+    2
+
+  *
+
+    -8 5
+
+  *
+
+    1435434255433 5
+
+Expected Output
+Download
+
+  *
+
+    Exception: A is negative
+
+  *
+
+    Not enough memory
+
+  *
+
+    2
+
+  * Blog <https://www.hackerrank.com/blog>
+  * Scoring <https://www.hackerrank.com/scoring>
+  * Environment <https://www.hackerrank.com/environment>
+  * FAQ <https://www.hackerrank.com/faq>
+  * About Us <https://www.hackerrank.com/about-us>
+  * Helpdesk <https://help.hackerrank.com/>
+  * Careers <https://www.hackerrank.com/careers>
+  * Terms Of Service <https://www.hackerrank.com/terms-of-service>
+  * Privacy Policy <https://www.hackerrank.com/privacy>
+
+
+      Cookie support is required to access HackerRank
+
+Seems like cookies are disabled on this browser, please enable them to
+open this website
+
+By clicking “Accept All Cookies”, you agree to the storing of cookies on
+your device to enhance site navigation, analyze site usage, and assist
+in our marketing efforts. Privacy Policy. <https://www.hackerrank.com/
+about-us/privacy>
+Cookies Settings Accept All Cookies
+Company Logo
+
+
+    Privacy Preference Center
+
+When you visit any website, it may store or retrieve information on your
+browser, mostly in the form of cookies. This information might be about
+you, your preferences or your device and is mostly used to make the site
+work as you expect it to. The information does not usually directly
+identify you, but it can give you a more personalized web experience.
+Because we respect your right to privacy, you can choose not to allow
+some types of cookies. Click on the different category headings to find
+out more and change our default settings. However, blocking some types
+of cookies may impact your experience of the site and the services we
+are able to offer.
+More information <https://www.hackerrank.com/about-us/privacy>
+Allow All
+
+
+      Manage Consent Preferences
+
+
+        Performance Cookies
+
+Performance Cookies
+
+These cookies allow us to count visits and traffic sources so we can
+measure and improve the performance of our site. They help us to know
+which pages are the most and least popular and see how visitors move
+around the site. All information these cookies collect is aggregated and
+therefore anonymous. If you do not allow these cookies we will not know
+when you have visited our site, and will not be able to monitor its
+performance.
+
+
+        Targeting Cookies
+
+Targeting Cookies
+
+These cookies may be set through our site by our advertising partners.
+They may be used by those companies to build a profile of your interests
+and show you relevant adverts on other sites. They do not store directly
+personal information, but are based on uniquely identifying your browser
+and internet device. If you do not allow these cookies, you will
+experience less targeted advertising.
+
+
+        Strictly Necessary Cookies
+
+Always Active
+
+These cookies are necessary for the website to function and cannot be
+switched off in our systems. They are usually only set in response to
+actions made by you which amount to a request for services, such as
+setting your privacy preferences, logging in or filling in forms. You
+can set your browser to block or alert you about these cookies, but some
+parts of the site will not then work. These cookies do not store any
+personally identifiable information.
+
+
+        Functional Cookies
+
+Functional Cookies
+
+These cookies enable the website to provide enhanced functionality and
+personalisation. They may be set by us or by third party providers whose
+services we have added to our pages. If you do not allow these cookies
+then some or all of these services may not function properly.
+
+Back Button
+
+
+Cookie List
+
+Search Icon
+
+Filter Icon
+
+Clear
+
+checkbox label label
+Apply Cancel
+Consent Leg.Interest
+checkbox label
+
+label
+checkbox label
+
+label
+checkbox label
+
+label
+
+Confirm My Choices
+Powered by Onetrust <https://www.onetrust.com/products/cookie-consent/>
+Your Privacy [`dialog closed`]
